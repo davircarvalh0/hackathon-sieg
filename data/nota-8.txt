@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 42328/7
+Emitente: Delta Logistica Integrada (64560755960224)
+Emissao: 2025-07-15
+Status: Autorizada
+Valor total: R$ 4179,51

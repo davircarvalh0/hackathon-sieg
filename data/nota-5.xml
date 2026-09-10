@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>83665</numero>
+  <serie>3</serie>
+  <emitente cnpj="54416961553566">Maresia Nautica</emitente>
+  <dataEmissao>2025-02-14</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>40276.15</valorTotal>
+</notaFiscalFicticia>

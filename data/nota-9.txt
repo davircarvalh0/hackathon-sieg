@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 493227/1
+Emitente: Lumen Eletronicos (56909102594707)
+Emissao: 2025-08-16
+Status: Autorizada
+Valor total: R$ 42971,89

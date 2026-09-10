@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>42328</numero>
+  <serie>7</serie>
+  <emitente cnpj="64560755960224">Delta Logistica Integrada</emitente>
+  <dataEmissao>2025-07-15</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>4179.51</valorTotal>
+</notaFiscalFicticia>

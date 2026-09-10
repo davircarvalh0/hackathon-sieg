@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>493227</numero>
+  <serie>1</serie>
+  <emitente cnpj="56909102594707">Lumen Eletronicos</emitente>
+  <dataEmissao>2025-08-16</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>42971.89</valorTotal>
+</notaFiscalFicticia>

@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 83665/3
+Emitente: Maresia Nautica (54416961553566)
+Emissao: 2025-02-14
+Status: Autorizada
+Valor total: R$ 40276,15

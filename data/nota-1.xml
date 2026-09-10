@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>945668</numero>
+  <serie>4</serie>
+  <emitente cnpj="58697025078985">Ipe Amarelo Farmacia</emitente>
+  <dataEmissao>2025-02-14</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>21089.19</valorTotal>
+</notaFiscalFicticia>

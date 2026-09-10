@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 945668/4
+Emitente: Ipe Amarelo Farmacia (58697025078985)
+Emissao: 2025-02-14
+Status: Autorizada
+Valor total: R$ 21089,19
