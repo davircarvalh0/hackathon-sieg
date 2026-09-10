@@ -13,7 +13,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 def aceitar_cookies_se_existir(driver, timeout=4):
     try:
         botao_cookies = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable((By.XPATH, "<<< PREENCHER_AQUI: XPATH_BOTAO_ACEITAR_COOKIES >>>"))
+            EC.element_to_be_clickable((By.XPATH, "<<<//*[@id="cookie-banner"]>>>"))
         )
         botao_cookies.click()
     except TimeoutException:
@@ -82,7 +82,7 @@ try:
     fechar_popup_se_existir(driver, 4)
     resolver_desafio_matematico(driver, 3)
 
-    botao_busca = wait.until(EC.element_to_be_clickable((By.ID, "<<< PREENCHER_AQUI: ID_DO_BOTAO_DE_BUSCA >>>")))
+    botao_busca = wait.until(EC.element_to_be_clickable((By.ID, "/html/body/main/div[1]/form/div[3]/button")))
     try:
         botao_busca.click()
     except ElementClickInterceptedException:
@@ -99,11 +99,11 @@ try:
         fechar_popup_se_existir(driver, 3)
         resolver_desafio_matematico(driver, 2)
         
-        wait.until(EC.presence_of_element_located((By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>")))
-        qtd_linhas = len(driver.find_elements(By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>"))
+        wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id='resultados']/div[1]")))
+        qtd_linhas = len(driver.find_elements(By.XPATH, "//*[@id='resultados']/div[1]"))
         
         for i in range(qtd_linhas):
-            linhas_notas = driver.find_elements(By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>")
+            linhas_notas = driver.find_elements(By.XPATH, "//*[@id='resultados']/div[1]")
             linha = linhas_notas[i]
             
             try:
@@ -131,7 +131,7 @@ try:
                     time.sleep(1)
                     
                     fechar_popup_se_existir(driver, 2)
-                    wait.until(EC.presence_of_element_located((By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>")))
+                    wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id='resultados']/div[1]")))
                 
             except NoSuchElementException:
                 continue
