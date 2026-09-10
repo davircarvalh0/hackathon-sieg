@@ -130,7 +130,7 @@ try:
                     print(f"Nota na posição {i+1} é AUTORIZADA. Abrindo...")
                     
                     # Clica para abrir a nota
-                    botao_abrir_nota = linha.find_element(By.XPATH, ".//[PREENCHER_AQUI: XPATH_BOTAO_OU_LINK_QUE_ABRE_A_NOTA]")
+                    botao_abrir_nota = linha.find_element(By.XPATH, ".//[//*[@id="resultados"]/div[1]/div[1]/a]")
                     botao_abrir_nota.click()
                     
                     # Lida com possíveis bloqueios na página da nota
@@ -139,8 +139,8 @@ try:
                     resolver_desafio_matematico(driver, 2)
 
                     # Extrai os dados que precisamos
-                    chave = wait.until(EC.presence_of_element_located((By.XPATH, "[PREENCHER_AQUI: XPATH_CHAVE_DE_ACESSO]"))).text
-                    valor = driver.find_element(By.XPATH, "[PREENCHER_AQUI: XPATH_VALOR_TOTAL]").text
+                    chave = wait.until(EC.presence_of_element_located((By.XPATH, "[/html/body/main/div[1]/table/tbody/tr[1]/td]"))).text
+                    valor = driver.find_element(By.XPATH, "/html/body/main/div[1]/table/tbody/tr[6]/td").text
                     
                     # Salva em nossa lista principal
                     dados_autorizados.append({'chave': chave, 'valor': valor})
@@ -164,7 +164,7 @@ try:
 
         # Terminou de ler todas as linhas da página atual, tenta ir para a próxima
         try:
-            botao_proxima = driver.find_element(By.XPATH, "[PREENCHER_AQUI: XPATH_BOTAO_PROXIMA_PAGINA]")
+            botao_proxima = driver.find_element(By.XPATH, "[//*[@id="resultados"]/div[2]/a]")
             
             # Se o botão estiver desabilitado (não clicável), significa que chegamos na última página
             if botao_proxima.get_attribute("disabled") or "disabled" in botao_proxima.get_attribute("class"):
