@@ -31,7 +31,7 @@ def fechar_popup_se_existir(driver, timeout=3):
 def resolver_desafio_matematico(driver, timeout=3):
     try:
         elemento_pergunta = WebDriverWait(driver, timeout).until(
-            EC.presence_of_element_located((By.XPATH, "<<< PREENCHER_AQUI: XPATH_TEXTO_DA_PERGUNTA >>>"))
+            EC.presence_of_element_located((By.XPATH, "/html/body/main/div/form/label"))
         )
         texto_pergunta = elemento_pergunta.text
         padrao = r'(\d+)\s*([\+\-\*])\s*(\d+)'
@@ -46,11 +46,11 @@ def resolver_desafio_matematico(driver, timeout=3):
             elif operador == '-': resultado = num1 - num2
             elif operador == '*': resultado = num1 * num2
 
-            campo_resposta = driver.find_element(By.XPATH, "<<< PREENCHER_AQUI: XPATH_CAMPO_DIGITAR_RESPOSTA >>>")
+            campo_resposta = driver.find_element(By.XPATH, "/html/body/main/div/form/input[2]")
             campo_resposta.clear()
             campo_resposta.send_keys(str(resultado))
 
-            botao_confirmar = driver.find_element(By.XPATH, "<<< PREENCHER_AQUI: XPATH_BOTAO_CONFIRMAR_DESAFIO >>>")
+            botao_confirmar = driver.find_element(By.XPATH, "/html/body/main/div/form/div/button")
             botao_confirmar.click()
             time.sleep(2)
     except TimeoutException:
