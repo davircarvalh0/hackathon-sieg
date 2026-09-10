@@ -1,5 +1,6 @@
 import re
 import time
+import requests 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -12,10 +13,9 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 def aceitar_cookies_se_existir(driver, timeout=4):
     try:
         botao_cookies = WebDriverWait(driver, timeout).until(
-            EC.element_to_be_clickable((By.XPATH, "[PREENCHER_AQUI: XPATH_BOTAO_ACEITAR_COOKIES]"))
+            EC.element_to_be_clickable((By.XPATH, "<<< PREENCHER_AQUI: XPATH_BOTAO_ACEITAR_COOKIES >>>"))
         )
         botao_cookies.click()
-        print("Aviso de cookies aceito.")
     except TimeoutException:
         pass
 
@@ -25,17 +25,15 @@ def fechar_popup_se_existir(driver, timeout=3):
             EC.element_to_be_clickable((By.XPATH, "/html/body/main/div[3]/div/div/button"))
         )
         botao_fechar.click()
-        print("Pop-up genérico interceptado e fechado.")
     except TimeoutException:
         pass
 
 def resolver_desafio_matematico(driver, timeout=3):
     try:
         elemento_pergunta = WebDriverWait(driver, timeout).until(
-            EC.presence_of_element_located((By.XPATH, "[PREENCHER_AQUI: XPATH_TEXTO_DA_PERGUNTA]"))
+            EC.presence_of_element_located((By.XPATH, "<<< PREENCHER_AQUI: XPATH_TEXTO_DA_PERGUNTA >>>"))
         )
         texto_pergunta = elemento_pergunta.text
-        
         padrao = r'(\d+)\s*([\+\-\*])\s*(\d+)'
         match = re.search(padrao, texto_pergunta)
         
@@ -47,26 +45,23 @@ def resolver_desafio_matematico(driver, timeout=3):
             if operador == '+': resultado = num1 + num2
             elif operador == '-': resultado = num1 - num2
             elif operador == '*': resultado = num1 * num2
-            
-            print(f"Desafio resolvido: {num1} {operador} {num2} = {resultado}")
 
-            campo_resposta = driver.find_element(By.XPATH, "[PREENCHER_AQUI: XPATH_CAMPO_DIGITAR_RESPOSTA]")
+            campo_resposta = driver.find_element(By.XPATH, "<<< PREENCHER_AQUI: XPATH_CAMPO_DIGITAR_RESPOSTA >>>")
             campo_resposta.clear()
             campo_resposta.send_keys(str(resultado))
 
-            botao_confirmar = driver.find_element(By.XPATH, "[PREENCHER_AQUI: XPATH_BOTAO_CONFIRMAR_DESAFIO]")
+            botao_confirmar = driver.find_element(By.XPATH, "<<< PREENCHER_AQUI: XPATH_BOTAO_CONFIRMAR_DESAFIO >>>")
             botao_confirmar.click()
             time.sleep(2)
-            
     except TimeoutException:
         pass
-
 
 # ==========================================
 # INÍCIO DO FLUXO PRINCIPAL
 # ==========================================
 driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 10)
+dados_autorizados = [] 
 
 try:
     # ------------------------------------------
@@ -87,124 +82,99 @@ try:
     fechar_popup_se_existir(driver, 4)
     resolver_desafio_matematico(driver, 3)
 
-    botao_busca = wait.until(EC.element_to_be_clickable((By.ID, "[PREENCHER_AQUI: ID_DO_BOTAO_DE_BUSCA]")))
+    botao_busca = wait.until(EC.element_to_be_clickable((By.ID, "<<< PREENCHER_AQUI: ID_DO_BOTAO_DE_BUSCA >>>")))
     try:
         botao_busca.click()
     except ElementClickInterceptedException:
-        aceitar_cookies_se_existir(driver, 2):
         fechar_popup_se_existir(driver, 2)
         resolver_desafio_matematico(driver, 2)
         botao_busca.click()
 
-
     # ------------------------------------------
-    # ETAPA 2: PAGINAÇÃO E EXTRAÇÃO (O CORAÇÃO DO CÓDIGO)
+    # ETAPA 2: PAGINAÇÃO E EXTRAÇÃO
     # ------------------------------------------
-    dados_autorizados = [] # Vai guardar dicionários com chave e valor
     pagina_atual = 1
 
-    while True: # Loop infinito que só para quando não houver próxima página
-        print(f"\n--- Analisando Página {pagina_atual} ---")
-        
-        # Defesas ao carregar nova página
-        aceitar_cookies_se_existir(driver, 2):
+    while True:
         fechar_popup_se_existir(driver, 3)
         resolver_desafio_matematico(driver, 2)
         
-        # Espera as notas aparecerem
-        wait.until(EC.presence_of_element_located((By.XPATH, "[PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA]")))
-        
-        # Conta quantas notas tem na tabela atual
-        qtd_linhas = len(driver.find_elements(By.XPATH, "[PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA]"))
+        wait.until(EC.presence_of_element_located((By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>")))
+        qtd_linhas = len(driver.find_elements(By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>"))
         
         for i in range(qtd_linhas):
-            # IMPORTANTE: Busca as linhas novamente a cada rodada para evitar o StaleElementReference
-            linhas_notas = driver.find_elements(By.XPATH, "[PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA]")
+            linhas_notas = driver.find_elements(By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>")
             linha = linhas_notas[i]
             
             try:
-                # Verifica o status da nota (cancelada, denegada, autorizada)
-                status = linha.find_element(By.XPATH, ".//[PREENCHER_AQUI: XPATH_COLUNA_STATUS]").text.strip().lower()
+                status = linha.find_element(By.XPATH, ".//<<< PREENCHER_AQUI: XPATH_COLUNA_STATUS >>>").text.strip().lower()
 
                 if "autorizada" in status:
-                    print(f"Nota na posição {i+1} é AUTORIZADA. Abrindo...")
-                    
-                    # Clica para abrir a nota
-                    botao_abrir_nota = linha.find_element(By.XPATH, ".//[//*[@id="resultados"]/div[1]/div[1]/a]")
+                    # Correção de sintaxe: aspas simples dentro de aspas duplas e remoção dos colchetes
+                    botao_abrir_nota = linha.find_element(By.XPATH, ".//*[@id='resultados']/div[1]/div[1]/a")
                     botao_abrir_nota.click()
                     
-                    # Lida com possíveis bloqueios na página da nota
-                    aceitar_cookies_se_existir(driver, 2):
                     fechar_popup_se_existir(driver, 3)
                     resolver_desafio_matematico(driver, 2)
 
-                    # Extrai os dados que precisamos
-                    chave = wait.until(EC.presence_of_element_located((By.XPATH, "[/html/body/main/div[1]/table/tbody/tr[1]/td]"))).text
+                    # Correção de sintaxe: remoção dos colchetes
+                    chave_bruta = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/main/div[1]/table/tbody/tr[1]/td"))).text
+                    # Limpa a chave para garantir apenas os 44 dígitos[cite: 1]
+                    chave_limpa = re.sub(r'\D', '', chave_bruta) 
+                    
                     valor = driver.find_element(By.XPATH, "/html/body/main/div[1]/table/tbody/tr[6]/td").text
                     
-                    # Salva em nossa lista principal
-                    dados_autorizados.append({'chave': chave, 'valor': valor})
-                    print(f"-> SUCESSO: Chave: {chave} | Valor: {valor}")
+                    # Salva no formato exigido pela API[cite: 1]
+                    dados_autorizados.append({'chave': chave_limpa, 'valor': valor}) 
                     
-                    # Volta para a tela da tabela
                     driver.back()
-                    time.sleep(1) # Pausa rápida para a tabela renderizar novamente
+                    time.sleep(1)
                     
-                    # Como voltamos de página, recarrega as defesas
-                    aceitar_cookies_se_existir(driver, 2):
                     fechar_popup_se_existir(driver, 2)
-                    wait.until(EC.presence_of_element_located((By.XPATH, "[PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA]")))
+                    wait.until(EC.presence_of_element_located((By.XPATH, "<<< PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA >>>")))
                 
-                else:
-                    print(f"Nota na posição {i+1} ignorada (Status: {status})")
-                    
             except NoSuchElementException:
-                print(f"Erro ao ler a nota na posição {i+1}. Pulando...")
                 continue
 
-        # Terminou de ler todas as linhas da página atual, tenta ir para a próxima
         try:
-            botao_proxima = driver.find_element(By.XPATH, "[//*[@id="resultados"]/div[2]/a]")
-            
-            # Se o botão estiver desabilitado (não clicável), significa que chegamos na última página
+            # Correção de sintaxe: aspas simples dentro de aspas duplas e remoção dos colchetes
+            botao_proxima = driver.find_element(By.XPATH, "//*[@id='resultados']/div[2]/a")
             if botao_proxima.get_attribute("disabled") or "disabled" in botao_proxima.get_attribute("class"):
-                print("Fim das páginas alcançado.")
-                break # Quebra o while True
+                break 
                 
             botao_proxima.click()
             pagina_atual += 1
-            time.sleep(2) # Dá tempo da nova página carregar
+            time.sleep(2)
             
         except NoSuchElementException:
-            print("Botão de próxima página não encontrado. Fim da extração.")
-            break # Quebra o while True
-
-    print(f"\nTotal de notas autorizadas processadas: {len(dados_autorizados)}")
-
-    # ------------------------------------------
-    # ETAPA 3: INSERIR DADOS NO SEGUNDO SITE
-    # ------------------------------------------
-    if dados_autorizados:
-        driver.get("[PREENCHER_AQUI: LINK_DO_SEGUNDO_SITE]")
-        aceitar_cookies_se_existir(driver, 4)
-        fechar_popup_se_existir(driver, 3)
-
-        for dado in dados_autorizados:
-            # Preenche a chave de acesso
-            campo_chave = wait.until(EC.presence_of_element_located((By.ID, "[PREENCHER_AQUI: ID_CAMPO_CHAVE_DESTINO]")))
-            campo_chave.clear()
-            campo_chave.send_keys(dado['chave'])
-            
-            # Preenche o valor total
-            campo_valor = driver.find_element(By.ID, "[PREENCHER_AQUI: ID_CAMPO_VALOR_DESTINO]")
-            campo_valor.clear()
-            campo_valor.send_keys(dado['valor'])
-            
-            botao_salvar = driver.find_element(By.XPATH, "[PREENCHER_AQUI: XPATH_BOTAO_SALVAR_DESTINO]")
-            botao_salvar.click()
-            
-            time.sleep(1)
-            print(f"Enviado para o site 2: {dado['chave']}")
+            break
 
 finally:
     driver.quit()
+
+# ==========================================
+# ETAPA 3: ENVIO PARA A API (POST /api/submit)
+# ==========================================
+if dados_autorizados:
+    url_api = "https://talkabit-z3eg.onrender.com/api/submit" # Endpoint de submissão do resultado[cite: 1]
+    
+    payload = {
+        "teamToken": "BREAKINGBAD-VPJ7W", # Identifica sua equipe[cite: 1]
+        "itens": dados_autorizados # Os pares extraídos[cite: 1]
+    }
+    
+    headers = {
+        "Content-Type": "application/json" 
+    }
+
+    try:
+        resposta = requests.post(url_api, json=payload, headers=headers)
+        
+        print(f"Status da Resposta: {resposta.status_code}")
+        print("Conteúdo da Resposta:", resposta.json())
+        
+        if resposta.status_code == 429:
+            print("Limite de tentativas atingido ou cooldown ativo.") # Limite de 10 tentativas ou cooldown de 30s[cite: 1]
+            
+    except Exception as e:
+        print(f"Erro ao enviar para a API: {e}")
