@@ -91,6 +91,7 @@ try:
     try:
         botao_busca.click()
     except ElementClickInterceptedException:
+        aceitar_cookies_se_existir(driver, 2):
         fechar_popup_se_existir(driver, 2)
         resolver_desafio_matematico(driver, 2)
         botao_busca.click()
@@ -106,6 +107,7 @@ try:
         print(f"\n--- Analisando Página {pagina_atual} ---")
         
         # Defesas ao carregar nova página
+        aceitar_cookies_se_existir(driver, 2):
         fechar_popup_se_existir(driver, 3)
         resolver_desafio_matematico(driver, 2)
         
@@ -132,6 +134,7 @@ try:
                     botao_abrir_nota.click()
                     
                     # Lida com possíveis bloqueios na página da nota
+                    aceitar_cookies_se_existir(driver, 2):
                     fechar_popup_se_existir(driver, 3)
                     resolver_desafio_matematico(driver, 2)
 
@@ -148,6 +151,7 @@ try:
                     time.sleep(1) # Pausa rápida para a tabela renderizar novamente
                     
                     # Como voltamos de página, recarrega as defesas
+                    aceitar_cookies_se_existir(driver, 2):
                     fechar_popup_se_existir(driver, 2)
                     wait.until(EC.presence_of_element_located((By.XPATH, "[PREENCHER_AQUI: XPATH_DA_LINHA_DA_NOTA]")))
                 
