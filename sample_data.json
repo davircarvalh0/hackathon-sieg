@@ -1,0 +1,84 @@
+{
+  "observacao": "Exemplo ILUSTRATIVO. As chaves, os valores e os emitentes abaixo sao ficticios e nao pertencem a equipe nenhuma - submeter este arquivo nao pontua. No evento, cada equipe recebe dados proprios derivados do seu teamToken.",
+  "meta": {
+    "teamToken": "DEMO-TIME",
+    "round": 1,
+    "totalNotas": 45,
+    "totalAutorizadas": 33,
+    "totalGatedN5": 7
+  },
+  "notas_amostra": [
+    {
+      "nid": "0h3k9pq2m1x7bd",
+      "numero": 362499,
+      "serie": 3,
+      "nomeEmitente": "Jangada Pescados",
+      "cnpjEmitente": "06859155882077",
+      "dataEmissao": "2025-04-20",
+      "status": "Autorizada",
+      "valor": "7494,63",
+      "chaveAcesso": "41250799180042365170551000000148300000000001"
+    },
+    {
+      "nid": "1w8n4rt0z6c5vf",
+      "numero": 771069,
+      "serie": 1,
+      "nomeEmitente": "Aurora Comercio de Alimentos",
+      "cnpjEmitente": "98695181013095",
+      "dataEmissao": "2025-03-15",
+      "status": "Autorizada",
+      "valor": "8514,69",
+      "chaveAcesso": "33250812345678905510010000025714000000000002"
+    },
+    {
+      "nid": "0a2j7ys3n9k1qe",
+      "numero": 681412,
+      "serie": 5,
+      "nomeEmitente": "Maresia Nautica",
+      "cnpjEmitente": "81269602282729",
+      "dataEmissao": "2025-06-08",
+      "status": "Autorizada",
+      "valor": "23606,80",
+      "chaveAcesso": "51250955123456785500100000036947000000000003"
+    },
+    {
+      "nid": "1p5m8dv4b2h6xw",
+      "numero": 345757,
+      "serie": 4,
+      "nomeEmitente": "Horizonte Moveis",
+      "cnpjEmitente": "86951832551666",
+      "dataEmissao": "2025-10-21",
+      "status": "Cancelada",
+      "valor": "28959,20",
+      "chaveAcesso": "23250644998877665510050000048172000000000004"
+    },
+    {
+      "nid": "0t9r3cz7g1n4ks",
+      "numero": 961983,
+      "serie": 7,
+      "nomeEmitente": "Estrela Materiais de Construcao",
+      "cnpjEmitente": "62605578401924",
+      "dataEmissao": "2025-07-09",
+      "status": "Denegada",
+      "valor": "20487,10",
+      "chaveAcesso": "35251033221144555510090000059305000000000005"
+    },
+    {
+      "nid": "1e6y2wq8j5m3fp",
+      "numero": 112040,
+      "serie": 2,
+      "nomeEmitente": "Lumen Eletronicos",
+      "cnpjEmitente": "01840112388592",
+      "dataEmissao": "2025-08-13",
+      "status": "Autorizada",
+      "valor": "30074,39",
+      "chaveAcesso": "13250777665544335510030000060538000000000006"
+    }
+  ],
+  "gabarito_amostra": [
+    { "chave": "41250799180042365170551000000148300000000001", "valor": 7494.63 },
+    { "chave": "33250812345678905510010000025714000000000002", "valor": 8514.69 },
+    { "chave": "51250955123456785500100000036947000000000003", "valor": 23606.80 },
+    { "chave": "13250777665544335510030000060538000000000006", "valor": 30074.39 }
+  ]
+}
