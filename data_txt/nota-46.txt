@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 768930/1
+Emitente: Ipe Amarelo Farmacia (70156117788108)
+Emissao: 2025-02-07
+Status: Autorizada
+Valor total: R$ 18495,20

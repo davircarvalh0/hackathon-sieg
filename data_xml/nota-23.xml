@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>397337</numero>
+  <serie>7</serie>
+  <emitente cnpj="59380024223351">Cerrado Pecas e Servicos</emitente>
+  <dataEmissao>2025-11-16</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>8900.26</valorTotal>
+</notaFiscalFicticia>

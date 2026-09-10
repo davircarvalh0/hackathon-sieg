@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 75151/6
+Emitente: Horizonte Moveis (57129453839407)
+Emissao: 2025-07-01
+Status: Autorizada
+Valor total: R$ 515,79

@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 476483/5
+Emitente: Estrela Materiais de Construcao (04172700290409)
+Emissao: 2025-11-10
+Status: Autorizada
+Valor total: R$ 15359,16

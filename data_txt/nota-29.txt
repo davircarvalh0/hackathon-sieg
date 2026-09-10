@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 782790/3
+Emitente: Fonte Clara Bebidas (62400084210651)
+Emissao: 2025-09-12
+Status: Autorizada
+Valor total: R$ 31401,90

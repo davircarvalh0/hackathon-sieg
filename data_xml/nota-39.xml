@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>870961</numero>
+  <serie>8</serie>
+  <emitente cnpj="78057837200912">Jangada Pescados</emitente>
+  <dataEmissao>2025-05-08</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>2037.42</valorTotal>
+</notaFiscalFicticia>

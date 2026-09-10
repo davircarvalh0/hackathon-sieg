@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>604908</numero>
+  <serie>6</serie>
+  <emitente cnpj="60099738967061">Girassol Papelaria</emitente>
+  <dataEmissao>2025-05-03</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>26728.76</valorTotal>
+</notaFiscalFicticia>

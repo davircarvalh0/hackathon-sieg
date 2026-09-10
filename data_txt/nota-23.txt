@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 397337/7
+Emitente: Cerrado Pecas e Servicos (59380024223351)
+Emissao: 2025-11-16
+Status: Autorizada
+Valor total: R$ 8900,26

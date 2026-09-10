@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>524023</numero>
+  <serie>8</serie>
+  <emitente cnpj="44421445749313">Boreal Distribuidora</emitente>
+  <dataEmissao>2025-07-09</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>10203.93</valorTotal>
+</notaFiscalFicticia>

@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 785344/5
+Emitente: Jangada Pescados (20712978090697)
+Emissao: 2025-03-08
+Status: Autorizada
+Valor total: R$ 9782,07

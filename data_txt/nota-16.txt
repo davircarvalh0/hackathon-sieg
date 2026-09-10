@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 604908/6
+Emitente: Girassol Papelaria (60099738967061)
+Emissao: 2025-05-03
+Status: Autorizada
+Valor total: R$ 26728,76

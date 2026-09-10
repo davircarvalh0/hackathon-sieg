@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>912863</numero>
+  <serie>6</serie>
+  <emitente cnpj="88302523762328">Estrela Materiais de Construcao</emitente>
+  <dataEmissao>2025-08-10</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>22280.08</valorTotal>
+</notaFiscalFicticia>

@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 524023/8
+Emitente: Boreal Distribuidora (44421445749313)
+Emissao: 2025-07-09
+Status: Autorizada
+Valor total: R$ 10203,93

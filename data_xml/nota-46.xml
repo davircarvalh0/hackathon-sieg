@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>768930</numero>
+  <serie>1</serie>
+  <emitente cnpj="70156117788108">Ipe Amarelo Farmacia</emitente>
+  <dataEmissao>2025-02-07</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>18495.20</valorTotal>
+</notaFiscalFicticia>

@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 780680/3
+Emitente: Maresia Nautica (02694815411831)
+Emissao: 2025-04-18
+Status: Autorizada
+Valor total: R$ 46306,51

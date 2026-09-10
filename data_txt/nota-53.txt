@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 157966/3
+Emitente: Jangada Pescados (68844785257816)
+Emissao: 2025-08-07
+Status: Autorizada
+Valor total: R$ 6176,08

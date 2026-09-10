@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>831382</numero>
+  <serie>4</serie>
+  <emitente cnpj="43161830460092">Estrela Materiais de Construcao</emitente>
+  <dataEmissao>2025-04-05</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>29100.36</valorTotal>
+</notaFiscalFicticia>

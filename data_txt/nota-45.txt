@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 599325/3
+Emitente: Aurora Comercio de Alimentos (89216453945180)
+Emissao: 2025-12-15
+Status: Autorizada
+Valor total: R$ 14697,50

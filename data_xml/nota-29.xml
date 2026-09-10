@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>782790</numero>
+  <serie>3</serie>
+  <emitente cnpj="62400084210651">Fonte Clara Bebidas</emitente>
+  <dataEmissao>2025-09-12</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>31401.90</valorTotal>
+</notaFiscalFicticia>

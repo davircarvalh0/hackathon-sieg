@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 115302/1
+Emitente: Fonte Clara Bebidas (07110068748425)
+Emissao: 2025-01-10
+Status: Autorizada
+Valor total: R$ 47102,50

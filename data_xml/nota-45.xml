@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>599325</numero>
+  <serie>3</serie>
+  <emitente cnpj="89216453945180">Aurora Comercio de Alimentos</emitente>
+  <dataEmissao>2025-12-15</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>14697.50</valorTotal>
+</notaFiscalFicticia>

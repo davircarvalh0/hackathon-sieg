@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 912863/6
+Emitente: Estrela Materiais de Construcao (88302523762328)
+Emissao: 2025-08-10
+Status: Autorizada
+Valor total: R$ 22280,08

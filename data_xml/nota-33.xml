@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>327432</numero>
+  <serie>1</serie>
+  <emitente cnpj="80725312545300">Girassol Papelaria</emitente>
+  <dataEmissao>2025-09-25</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>20429.25</valorTotal>
+</notaFiscalFicticia>

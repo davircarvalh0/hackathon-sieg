@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>115302</numero>
+  <serie>1</serie>
+  <emitente cnpj="07110068748425">Fonte Clara Bebidas</emitente>
+  <dataEmissao>2025-01-10</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>47102.50</valorTotal>
+</notaFiscalFicticia>

@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 327432/1
+Emitente: Girassol Papelaria (80725312545300)
+Emissao: 2025-09-25
+Status: Autorizada
+Valor total: R$ 20429,25

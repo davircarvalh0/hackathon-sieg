@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notaFiscalFicticia>
+  <chaveAcesso>disponivel-apenas-no-detalhe</chaveAcesso>
+  <numero>75151</numero>
+  <serie>6</serie>
+  <emitente cnpj="57129453839407">Horizonte Moveis</emitente>
+  <dataEmissao>2025-07-01</dataEmissao>
+  <status>Autorizada</status>
+  <valorTotal>515.79</valorTotal>
+</notaFiscalFicticia>

@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 870961/8
+Emitente: Jangada Pescados (78057837200912)
+Emissao: 2025-05-08
+Status: Autorizada
+Valor total: R$ 2037,42

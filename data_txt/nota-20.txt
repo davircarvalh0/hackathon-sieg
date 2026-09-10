@@ -1,0 +1,7 @@
+NOTA FISCAL FICTICIA (Portal Nimbus)
+Chave de acesso: disponivel-apenas-no-detalhe
+Numero/Serie: 831382/4
+Emitente: Estrela Materiais de Construcao (43161830460092)
+Emissao: 2025-04-05
+Status: Autorizada
+Valor total: R$ 29100,36
